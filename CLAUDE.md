@@ -7,6 +7,7 @@ This public repository maintains shared engineering rules for `lyra-io` projects
 ## Required reading
 
 - Read [workflow.md](workflow.md) completely before changing this repository.
+- Read [rust.md](rust.md) before changing Rust conventions or Rust examples.
 - Read each rule file you are changing and preserve unrelated rules.
 - `CLAUDE.md` is the single source of this repository's agent instructions; `AGENTS.md` is a tracked relative symlink to it.
 
