@@ -2,11 +2,20 @@
 
 This public repository maintains shared engineering rules for `lyra-io` projects.
 
+`CLAUDE.md` is the entry point; do not add a separate README.
+
 ## Required reading
 
 - Read [workflow.md](workflow.md) completely before changing this repository.
 - Read each rule file you are changing and preserve unrelated rules.
 - `CLAUDE.md` is the single source of this repository's agent instructions; `AGENTS.md` is a tracked relative symlink to it.
+
+## Adoption by other projects
+
+- The approved shared rules live on `main`; pull-request branches remain proposals until reviewed and merged. Change shared rules here rather than maintaining separate copies in every project.
+- Each project's root `CLAUDE.md` must explicitly require reading the applicable shared rules, then add its own build commands, layout, and component-specific constraints. Keep `AGENTS.md` as a tracked relative symlink to that project's `CLAUDE.md`.
+- A link alone is not a guarantee that an agent has loaded its target. Read the rules from a local checkout of this repository's approved `main`, or fetch their contents from GitHub. Use one recorded commit for a task; do not silently switch rule revisions midway through it.
+- Report unavailable rules rather than claiming they were read. Repository adoption changes must be reviewed separately; creating this repository does not update other projects automatically.
 
 ## Scope
 
